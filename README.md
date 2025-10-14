@@ -18,3 +18,10 @@ Steps to initiate the project:
 6. run "npx hardhat run scripts/deployDodoFlashloan --network localhost"
 7. the address of your flashloan contract was printed in your terminal, copy and paste it as "FLASHLOAN_ADDRESS" env variable
 8. you can now run "npx hardhat run scripts/arbitrage --network localhost" or "npx hardhat test test/index.test.ts"
+
+# Commands
+
+1. `npm install`
+2. `npx hardhat typechain`
+3. `npx hardhat node --fork https://bnb-mainnet.g.alchemy.com/v2/LHXTohiQVpKrwTRbWzvCT`
+4. `npx hardhat run scripts/arbitrage2.ts`

@@ -98,7 +98,7 @@ async function main() {
 
 }
 
-main().catch((error) => {
+main().catch((error) => { // Runs the scheduled jobs
     console.error(error);
     process.exitCode = 1;
   });

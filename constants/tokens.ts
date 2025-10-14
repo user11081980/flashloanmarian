@@ -161,4 +161,25 @@ export const ERC20Token: erc20Token = {
       logoURI:
         "https://tokens.1inch.io/0x6c28aef8977c9b773996d0e8376d2ee379446f2f.png",
     },
+    WBNB: {
+        symbol: "WBNB",
+        name: "Wrapped BNB",
+        decimals: 18,
+        address: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+        logoURI: ""
+    },
+    APX: {
+        symbol: "APX",
+        name: "ApolloX Token",
+        decimals: 18,
+        address: "0x78F5d389F5CDCcFc41594aBaB4B0Ed02F31398b3",
+        logoURI: ""
+    },
+    CAKE: {
+        symbol: "CAKE",
+        name: "PancakeSwap Token",
+        decimals: 18,
+        address: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+        logoURI: ""
+    }
   };

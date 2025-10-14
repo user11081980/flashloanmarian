@@ -11,8 +11,8 @@ export const getPriceInUSDC = async (params: PriceInUsdcParams) => {
 
     const router = new ethers.Contract(params.router, routerAbi, params.provider);
     const factory = new ethers.Contract(params.factory, factoryAbi, params.provider);
-
-    const pairAddress = await factory.getPair(params.tokenAddress, ERC20Token.USDC?.address);
+    
+    const pairAddress = await factory.getPair(params.tokenAddress, ERC20Token.WBNB.address);
     const pair = new ethers.Contract(pairAddress, pairAbi, params.provider);
     const reserves = await pair.getReserves();
 

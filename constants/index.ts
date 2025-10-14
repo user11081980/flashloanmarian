@@ -10,6 +10,7 @@ export const Protocols = {
     APESWAP: 6,
     WAULTSWAP: 7,
     DODO: 9,
+    PANCAKESWAP: 10
 }
 
 export const Routers: RouterMap = {
@@ -21,12 +22,18 @@ export const Routers: RouterMap = {
     POLYGON_POLYCAT: "0x94930a328162957FF1dd48900aF67B5439336cBD",
     POLYGON_APESWAP: "0xC0788A3aD43d79aa53B09c2EaCc313A787d1d607",
     POLYGON_WAULTSWAP: "0x3a1D87f206D12415f5b0A33E786967680AAb4f6d",
+    BNBCHAIN_UNISWAP_V2: "0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24",
+    BNBCHAIN_PANCAKESWAP: "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+    BNBCHAIN_SUSHISWAP: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506"
 }
 
 export const factories = {
     POLYGON_SUSHISWAP: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
     POLYGON_QUICKSWAP: "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
-    POLYGON_APESWAP: "0xCf083Be4164828f00cAE704EC15a36D711491284"
+    POLYGON_APESWAP: "0xCf083Be4164828f00cAE704EC15a36D711491284",
+    BNBCHAIN_UNISWAP_V2: "0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6",
+    BNBCHAIN_PANCAKESWAP: "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73",
+    BNBCHAIN_SUSHISWAP: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4"
 }
 
 export const dodoV2Pool = {
@@ -41,3 +48,34 @@ export const dodoV2Pool = {
 
 export const QUOTER_ADDRESS = "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
 export const QUOTER_ADDRESS2 = "0x61fFE014bA17989E743c5F6cB21bF9697530B21e";
+
+export const exchanges = {
+    bnbChain: {
+        uniswapV2: {
+            factoryAddress: "0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6",
+            routerAddress: "0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24"
+        },
+        pancakeSwap: {
+            factoryAddress: "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73",
+            routerAddress: "0x10ED43C718714eb63d5aA57B78B54704E256024E"
+        },
+        sushiSwap: {
+            factoryAddress: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
+            routerAddress: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506"
+        }
+    },
+    polygon: {
+        sushiSwap: {
+            factoryAddress: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
+            routerAddress: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506"
+        },
+        quickSwap: {
+            factoryAddress: "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
+            routerAddress: "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff"
+        },
+        apeSwap: {
+            factoryAddress: "0xCf083Be4164828f00cAE704EC15a36D711491284",
+            routerAddress: "0xC0788A3aD43d79aa53B09c2EaCc313A787d1d607"
+        }
+    }
+};
